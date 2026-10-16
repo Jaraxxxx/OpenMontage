@@ -1,0 +1,26 @@
+{
+  "film": {
+    "name": "Omni Flash smoke test",
+    "fps": 24
+  },
+  "variables": {
+    "subject": "a shiny red die",
+    "look": "clean studio lighting, soft shadows, shallow depth of field"
+  },
+  "defaults": {
+    "references": []
+  },
+  "clips": [
+    {
+      "id": "clip_a",
+      "seconds": 4,
+      "prompt_file": "prompts/clip_a.md"
+    }
+  ],
+  "assembly": {
+    "upscale_to": [1280, 720],
+    "output": "final.mp4",
+    "grade": "eq=contrast=1.0:saturation=1.0",
+    "grain": 0
+  }
+}
